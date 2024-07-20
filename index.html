@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sri Ram Charan Marri</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+      <!-- <base href="https://cdn.jsdelivr.net/gh/sriramcharanmarri/floraranya@main/">  -->
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <a href="./" id="exp"><img class="main-logo nav-links" src="./assets/favicon.png" alt="sriramcharanmarri" id="ficon" onmouseover="changeIconColor(id,'favicon')"
+          onmouseout="changeIconToDefault(id,'favicon')" ></a>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"><a href="./" id="exp"><img class="main-logo nav-links" src="./assets/favicon.png" alt="sriramcharanmarri"></a></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Sri Ram Charan Marri profile picture" />
+      </div>
+      <div class="section__text">
+        <h3 class="section__text__p1">Hey! there I'm</h3>
+        <h1 class="title">Sri Ram Charan Marri</h1>
+        <p class="section__text__p2">&lt;Programmer / Developer&gt;</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Sri Ram Charan Marri Resume.pdf')"
+          >
+            Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img 
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            id="licon"
+            style="height: 2.5rem;"
+            onclick="window.open('https://linkedin.in/in/sriramcharanmarri/', '_blank')"
+            onmouseover="changeIconColor(id,'linkedin')"
+            onmouseout="changeIconToDefault(id,'linkedin')"
+          />
+          <img 
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            id="gicon"
+            style="height: 2.5rem;"
+            onclick="window.open('https://github.com/sriramcharanmarri/codersscores', '_blank')"
+            onmouseover="changeIconColor(id,'github')"
+            onmouseout="changeIconToDefault(id,'github')"
+          />
+        </div>
+      </div>
+    </section>
+    <div class="spacer layer1"></div>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div id="experience" class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p><a id='exp' onclick="window.open('./assets/charan-suprajaTechnologies.pdf')">Supraja Technologies</a> <br /><a id='exp' onclick="window.open('./assets/charan-csrbox.pdf')">CSRBOX Academic Internship</a></p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelors Degree <br>in CSE-Cyber Security</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              A Highly motivated cybersecurity enthusiast with a strong foundation in programming,web development and penetration testing.
+Eager to leverage my skills and knowledge to contribute to a company's security posture and innovation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/python.png"
+                  alt="python icon"
+                  class="icon"
+                />
+                  <h3>Python</h3>
+              </article>
+              <article>
+                <img
+                  src="./assets/java.png"
+                  alt="Java icon"
+                  class="icon"
+                />
+                  <h3>Java</h3>
+              </article>
+              <article>
+                <img
+                  src="./assets/php.png"
+                  alt="php icon"
+                  class="icon"
+                />
+                  <h3>PHP</h3>
+              </article>
+              <article>
+                <img
+                  src="./assets/sql.png"
+                  alt="php icon"
+                  class="icon"
+                />
+                  <h3>SQL</h3>
+              </article>
+              <article>
+                <img
+                  src="./assets/html.png"
+                  alt="Html icon"
+                  class="icon"
+                />
+                  <h3>HTML</h3>
+              </article>
+              <article>
+                <img
+                  src="./assets/css.png"
+                  alt="CSS icon"
+                  class="icon"
+                />
+                  <h3>CSS</h3>
+              </article>
+              <article>
+                <img
+                  src="./assets/js.png"
+                  alt="JS icon"
+                  class="icon"
+                />
+                  <h3>Java Script</h3>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tools & Technologies</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/github.png"
+                  alt="github icon"
+                  class="icon"
+                />
+                  <h3>Github</h3>
+              </article>
+              <article>
+                <img
+                  src="./assets/bootstrap.png"
+                  alt="bootstrap icon"
+                  class="icon"
+                />
+                  <h3>Bootstrap</h3>
+              </article>
+              <article>
+                <img
+                  src="./assets/burpsuite.png"
+                  alt="Burpsuite icon"
+                  class="icon"
+                />
+                  <h3>Burpsuite</h3>
+              </article>
+              <article>
+                <img
+                  src="./assets/canva.png"
+                  alt="canva icon"
+                  class="icon"
+                />
+                  <h3>Canva</h3>
+              </article>
+              <article>
+                <img
+                  src="./assets/secure.png"
+                  alt="Security icon"
+                  class="icon"
+                />
+                  <h3>Vulnerability Assessment</h3>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/cs-logo.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Coders Scores</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/sriramcharanmarri/codersscores', '_blank')">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="window.open('https://codersscores.sriramcharanmarri.me/', '_blank')">Live Demo</button>
+
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img alt="Project 2"
+              class="project-img" src="./assets/floraranya.svg" alt="Image Description">
+            </div>
+            <h2 class="experience-sub-title project-title">Floraranya</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/sriramcharanmarri/floraranya', '_blank')">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="window.open('https://sriramcharanmarri.github.io/floraranya/', '_blank')">Live Demo</button>
+
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/od.svg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+              <h2 class="experience-sub-title project-title">Organ Donation DAPP</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/sriramcharanmarri/Oragan-Dapp', '_blank')">Github</button>
+              <button class="btn btn-color-2 project-btn">Live Demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/mail.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+            id="mail"
+          />
+          <p><a href="mailto:sriramcharnmarri23@gmail.com" onmouseover="changeIconColor('mail','mail')"
+            onmouseout="changeIconToDefault('mail','mail')" >sriramcharnmarri23@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+            id="liicon"
+          />
+          <p><a href="https://www.linkedin.com/in/sriramcharanmarri/" onmouseover="changeIconColor('liicon','linkedin')"
+            onmouseout="changeIconToDefault('liicon','linkedin')">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 <a href="./" id="exp"><img class="icon" src="./assets/favicon.png" alt="sriramcharanmarri" id="fooicon" onmouseover="changeIconColor(id,'favicon')"
+        onmouseout="changeIconToDefault(id,'favicon')" ></a> All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
